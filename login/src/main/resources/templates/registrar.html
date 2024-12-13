@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registrar Usuário</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Cadastre um usuário e senha</h4>
+                </div>
+                <div class="card-body">
+                   <form method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" class="form-control" required/>
+                        </div>
+						<div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+		</div>
+		<div class="col-md-12 text-center">
+		<a class="nav-link" href="/login">Cancelar</a>
+		<a class="nav-link" href="/lista2">Lista</a>
+    </div>
+</div>
+</body>
+</html>
